@@ -1,0 +1,42 @@
+input {
+    height: 40px;
+    padding: 10px;
+    color: var(--color-grey-4);
+    border: 2px solid var(--color-grey-4);
+    height: 52px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid var(--color-brand-1);
+}
+
+input:-ms-value {
+    padding-left: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+    transition: 1s;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+textarea:focus {
+    height: 200px;
+    outline: none;
+    border: 2px solid var(--color-brand-1);
+}
+
+input::placeholder, textarea::placeholder {
+    padding-top: 0.5rem;
+    padding-left: 10px;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-grey-3);
+}
+

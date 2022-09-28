@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/modal.css">
+    
+    <title>TechPosters - Home</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar-items">
+        <img src="./assets/img/logo.svg" alt="Logo">
+        <button class="btn">Sair</button>
+      </div>
+    </header>
+    <main>
+      <div class="container nav">
+        <nav>          
+          <div class="perfil flex">
+            <img src="./assets/img/user1.svg" alt="Imagem do usuário 1">
+            <div class="perfil-info">
+              <h1>Samuel Leão</h1>
+              <h2>Front end Engineer</h2>
+            </div>
+          </div>
+          <div class="post-input">
+            <input type="text" placeholder="Digitar título do post">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+            <button class="btn" disabled>Postar</button>
+          </div>
+          <article>
+            <span class="posts-title">Posts</span>
+            <ul class="posts"> 
+            </ul>
+          </article>
+        </nav>
+        <aside>
+          <span>Sugestões para você seguir</span>
+          <div class="perfis">
+             
+          </div>
+        </aside>
+      </div>
+      <div class="container-modal">
+      <section class="modal">
+      </section>
+    </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script/database/users.js"></script>
+    <script src="./script/database/posts.js"></script>
+    <script src="./script/database/sugestUsers.js"></script>
+    <script src="./pages/home/index.js"></script>
+  </body>
+</html>
